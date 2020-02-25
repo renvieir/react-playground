@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app, main {
+  height: 100%;
+}
+
+body {
+  color: #4E4E4E;
+  -webkit-font-smoothing: antialiased;
+  background: #f2f2f2;
+}
+
+body, input, button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
