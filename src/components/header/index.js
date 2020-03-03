@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdShoppingBasket } from 'react-icons/md';
+import { MdAddCircleOutline } from 'react-icons/md';
 
-import { Container, Cart } from './styles';
-import logo from '../../assets/images/logo.svg';
+import { Container, Logo } from './styles';
+import logo from '../../assets/images/cat.svg';
 
 export default function header() {
   return (
     <Container>
-      <Link to="/">
-        <img src={logo} alt="Rocketshoes" />
-      </Link>
+      <Logo to="/">
+        <img src={logo} alt="Purrrfect Match" />
+        <h2>Purrrfect Match</h2>
+      </Logo>
 
-      <Cart to="/cart">
-        <div>
-          <strong>Meu Carrinho</strong>
-          <span>3 itens</span>
-        </div>
-        <MdShoppingBasket size={36} color="#fff" />
-      </Cart>
+      <div>
+        <input type="text" placeholder="Search cats" />
+
+        <button>
+          <MdAddCircleOutline size={20} color="#5452F6" />
+          add new cat
+        </button>
+      </div>
     </Container>
   );
 }

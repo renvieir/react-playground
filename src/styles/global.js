@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../assets/images/background.svg';
+
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -13,7 +13,7 @@ export default createGlobalStyle`
     min-height: 100%;
   }
   body {
-    background: #192020 url(${background}) no-repeat center top;
+    background: linear-gradient(347.71deg, #5452F6 12.93%, rgba(84, 82, 246, 0) 241.45%);
     -webkit-font-smoothing: antialiased !important;
   }
   body, input, button {
@@ -24,9 +24,4 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  #root {
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 0 20px 50px;
-  }
 `;

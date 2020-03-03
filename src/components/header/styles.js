@@ -5,31 +5,50 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
-`;
-
-export const Cart = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: opacity 0.2s;
-
-  &:hover {
-    opacity: 0.7;
-  }
+  margin: 40px 50px;
 
   div {
-    text-align: right;
-    margin-right: 10px;
+    display: flex;
+  }
 
-    strong {
-      display: block;
-      color: #fff;
-    }
+  input {
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 316px;
+    font-size: 15px;
 
-    span {
-      font-size: 12px;
-      color: #999;
-    }
+    margin-right: 25px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 316px;
+    font-size: 15px;
+  }
+`;
+
+export const Logo = styled(Link)`
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+  text-decoration: none;
+
+  h2 {
+    margin-left: 18px;
+    font-family: 'Bennet Display' Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
   }
 `;
